@@ -1,0 +1,29 @@
+//
+    |             Yay !
+    |                                     __|_\_
+    |                                   =u__.-.__)
+    |           http://example.com          /_/
+    != '\n'
+    != '          Build ' + pkg.version + '\n\n'
+
+doctype
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        block title
+            title example.com
+
+        link(rel='shortcut icon', href='/favicon.ico')
+        link(rel='author', href='/humans.txt')
+
+        each src in stylesheets
+            link(rel='stylesheet', href=src)
+
+    body
+        block content
+
+        each src in javascripts
+            script(src=src)

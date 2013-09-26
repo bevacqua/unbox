@@ -1,0 +1,15 @@
+{
+  "name": "unbox",
+  "description": "",
+  "homepage": "https://github.com/bevacqua/unbox",
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "ng@bevacqua.io",
+    "url": "http://bevacqua.io"
+  },
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "normalize-css": "2.1.3"
+  }
+}

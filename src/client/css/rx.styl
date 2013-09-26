@@ -1,0 +1,38 @@
+box-sizing()
+    -webkit-box-sizing arguments
+    -moz-box-sizing arguments
+    box-sizing arguments
+
+selection-properties(background,foreground,shadow)
+    background-color background
+    color foreground
+    text-shadow shadow
+
+selection-background-foreground-shadow(background,foreground,shadow)
+    &::-webkit-selection
+        selection-properties(background,foreground,shadow)
+
+    &::-moz-selection
+        selection-properties(background,foreground,shadow)
+
+    &::selection
+        selection-properties(background,foreground,shadow)
+
+    ::-webkit-selection
+        selection-properties(background,foreground,shadow)
+
+    ::-moz-selection
+        selection-properties(background,foreground,shadow)
+
+    ::selection
+        selection-properties(background,foreground,shadow)
+
+selection-background()
+    &::-webkit-selection
+        background arguments
+
+    &::-moz-selection
+        background arguments
+
+    &::selection
+        background arguments

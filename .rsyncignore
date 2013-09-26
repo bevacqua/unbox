@@ -1,0 +1,22 @@
+# vcs files
+.git
+
+# sensitive data
+*.pem
+
+# unnecessary on deployed applications
+build
+deploy
+test
+
+# junk
+bin/.tmp
+
+# will `npm install --production` on the server
+node_modules
+
+# already copied to bin
+bower_components
+
+# already translated into bin
+src/client

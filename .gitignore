@@ -1,0 +1,16 @@
+# package control
+node_modules
+bower_components
+
+# logs
+npm-debug.log
+
+# build artifacts
+bin
+
+# os artifacts
+.DS_Store
+
+# sensitive data
+env/private
+deploy/private

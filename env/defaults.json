@@ -1,0 +1,7 @@
+{
+    "NODE_ENV": "development",
+    "BUILD_DISTRIBUTION": "debug",
+    "PORT": 3000,
+    "CONSOLE_ENABLED": true,
+    "CONSOLE_LEVEL": "debug"
+}
