@@ -56,7 +56,6 @@
     "load-grunt-tasks": "0.1.0",
     "mocha": "1.13.0",
     "play": "0.5.0",
-    "time-grunt": "0.1.1",
-    "ultramarked": "0.5.4"
+    "time-grunt": "0.1.1"
   }
 }
