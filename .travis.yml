@@ -3,9 +3,9 @@ language: node_js
 node_js:
   - 0.10
 
-install:
+before_script:
   - sudo apt-get install -qqy graphicsmagick
-  - npm install
+  - npm install -g bower grunt-cli
   - bower install
 
 script:
