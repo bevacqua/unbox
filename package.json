@@ -1,6 +1,6 @@
 {
   "name": "unbox",
-  "description": "",
+  "description": "Unbox a node application with a well-designed build-oriented approach in minutes",
   "homepage": "https://github.com/bevacqua/unbox",
   "author": {
     "name": "Nicolas Bevacqua",

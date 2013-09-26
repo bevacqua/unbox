@@ -1,8 +1,8 @@
 # [**unbox**](http://bevacqua.io)
 
+#### Unbox a node application with a well-designed build-oriented approach in minutes
+
 ![unbox-512.png][1]
-
-
 
 # Cloning
 
@@ -25,7 +25,7 @@ cat unbox.sh | sh
 Now you're all set to start working in the development environment. Just issue this command to start your continuous development cycle:
 
 ```shell
-grunt dev # aliased `grunt`
+grunt dev
 ```
 
 # Development Flow
