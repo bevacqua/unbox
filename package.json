@@ -24,6 +24,7 @@
     "winston-pushover": "0.1.5"
   },
   "devDependencies": {
+    "bower": "1.2.6",
     "chalk": "0.2.1",
     "emoji-random": "0.1.0",
     "findit": "0.1.2",

@@ -6,6 +6,7 @@ node_js:
 install:
   - sudo apt-get install -qqy graphicsmagick
   - npm install
+  - bower install
 
 script:
   - grunt ci --verbose --stack
