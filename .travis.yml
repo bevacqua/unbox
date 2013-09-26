@@ -3,5 +3,9 @@ language: node_js
 node_js:
   - 0.10
 
+install:
+  - sudo apt-get install -qqy graphicsmagick
+  - npm install
+
 script:
   - grunt ci --verbose --stack
