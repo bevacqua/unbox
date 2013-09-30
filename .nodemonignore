@@ -1,24 +1,24 @@
 # seriously? ignore git changes
-./.git/*
+.git/*
 
 # package control
-./node_modules/*
-./bower_components/*
+node_modules/*
+bower_components/*
 
 # logs
-./npm_debug.log
+npm_debug.log
 
 # build artifacts
-./bin/*
+bin/*
 
 # deployment artifacts
-./deploy/*
+deploy/*
 
 # os artifacts
 .DS_Store
 
 # ignore client-side js
-./src/client/*
+src/client/*
 
 # ignore tests
-./test/*
+test/*
