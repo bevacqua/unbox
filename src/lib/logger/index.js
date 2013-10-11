@@ -1,13 +1,13 @@
 'use strict';
 
 var _ = require('lodash');
-var logger = require('winston');
+var winston = require('winston');
 var api = module.exports = { stream: stream };
 
 var levels = ['debug', 'info', 'warn', 'error'];
 
 _.each(levels, function(level){
-    api[level] = logger[level].bind(logger);
+    api[level] = winston[level].bind(winston);
 });
 
 require('./transports.js');

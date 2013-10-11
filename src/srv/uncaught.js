@@ -1,7 +1,5 @@
 'use strict';
 
-var logger = require('../lib/logger');
-
 process.on('uncaughtException', function(err){
     var cause = err.stack || err;
 

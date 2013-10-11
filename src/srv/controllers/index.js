@@ -2,7 +2,6 @@
 
 var path = require('path');
 var walk = require('walk');
-var logger = require('../../lib/logger');
 
 module.exports = {
     load: function(app, done){

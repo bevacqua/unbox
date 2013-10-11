@@ -18,6 +18,7 @@
     "lodash": "2.2.0",
     "moment": "2.2.1",
     "nconf": "0.6.7",
+    "nodetime": "0.8.13",
     "walk": "2.2.1",
     "winston": "0.7.2",
     "winston-papertrail": "0.1.4",

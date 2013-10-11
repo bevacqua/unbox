@@ -1,27 +1,25 @@
 'use strict';
 
-require('./globals.js');
-
 var path = require('path');
 var util = require('util');
 var nconf = require('nconf');
 var moment = require('moment');
-var pkg = require_cwd('package.json');
+var pkg;
+var env;
+
+moment.defaultFormat = 'Do HH:mm:ss';
 
 nconf.use('memory');
-nconf.set('BUILD_VERSION', pkg.version);
 nconf.argv();
 nconf.env();
 
-var env = nconf.get('NODE_ENV') || 'development';
+env = nconf.get('NODE_ENV') || 'development';
 
 file('user');
 file(env);
 file('defaults', false);
 
-var envText = util.format('%s - Loaded configuration for %s environment', moment().format(), env);
-
-console.log(envText);
+console.log('%s - Loaded configuration for %s environment', moment().format(), env);
 
 function file (name, secure) {
     var location = secure === false ? '.' : 'private';
@@ -30,3 +28,9 @@ function file (name, secure) {
 
     nconf.file(name, filepath);
 }
+
+require('./globals.js');
+
+pkg = require_cwd('package.json');
+
+nconf.set('BUILD_VERSION', pkg.version);

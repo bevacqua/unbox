@@ -4,12 +4,12 @@ var path = require('path');
 var express = require('express');
 var app = express();
 var controllers = require('./controllers');
-var logger = require('../lib/logger');
+var errorHandler = require('./expressErrorHandler.js');
 
 var port = conf('PORT');
 var debug = conf('BUILD_DISTRIBUTION') === 'debug';
 
-var statics = path.join(process.cwd(), 'bin/public');
+var statics = path.join(conf.cwd, 'bin/public');
 var favicon = path.join(statics, 'favicon.ico');
 
 logger.info('executing:', process.argv.join(' '));
@@ -31,6 +31,8 @@ controllers.load(app, function(){
     app.use(express.bodyParser());
 
     app.use(app.router);
+
+    errorHandler.setup(app);
 
     if (debug) {
         app.use(express.favicon(favicon));
