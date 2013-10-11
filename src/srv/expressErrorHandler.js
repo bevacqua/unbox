@@ -13,11 +13,17 @@ function setup (app) {
 }
 
 function handler (err, req, res, next) {
+    var result;
+    var info = err.stack ? '\n' + err.stack : ': ' + err;
+
     if (req.xhr) {
-        res.send(500, { error: 'Internal Server Error!' });
+        result = { error: 'Internal Server Error!' };
     } else {
-        res.send(500, 'Internal Server Error!');
+        result = 'Internal Server Error!';
     }
+
+    res.send(500, result);
+    logger.info('Error handled on request for %s%s', req.url, info);
 }
 
 module.exports = {
