@@ -19,6 +19,7 @@
   "node": true,
   "globals": {
     "conf": true,
-    "require_cwd": true
+    "require_cwd": true,
+    "logger": true
   }
 }
