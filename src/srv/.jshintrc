@@ -7,7 +7,7 @@
   "nonew": true,
   "sub": true,
   "undef": true,
-  "unused": true,
+  "unused": "vars",
   "trailing": true,
   "boss": true,
   "eqnull": true,
