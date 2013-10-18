@@ -3,6 +3,34 @@
 var emoji = require('emoji-random');
 
 module.exports = {
+    imagemin: {
+        all: {
+            files: [{
+                expand: true,
+                src: 'bin/public/img/**/*.{png,jpg,gif}'
+            }],
+            options: {
+                progressive: true,
+                interlaced: true
+            }
+        }
+    },
+    cssmin: {
+        release: {
+            files: { 'bin/public/css/all.css': 'bin/public/css/all.css' },
+            options: {
+                keepSpecialComments: 0
+            }
+        }
+    },
+    uglify: {
+        js: {
+            files: { 'bin/public/js/all.js': 'bin/public/js/**/*.js' },
+            options: {
+                preserveComments: false
+            }
+        }
+    },
     rev: {
         css: { files: { src: 'bin/public/css/all.css' } },
         js: { files: { src: 'bin/public/js/**/*.js' } },

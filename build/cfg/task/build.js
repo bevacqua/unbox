@@ -40,33 +40,5 @@ module.exports = {
     copy: _.assign(assets.img.copy, assets.js.copy, assets.other.copy),
     sprite: {
         icons: assets.img.sprite('icons', 'ic')
-    },
-    imagemin: {
-        all: {
-            files: [{
-                expand: true,
-                src: 'bin/public/img/**/*.{png,jpg,gif}'
-            }],
-            options: {
-                progressive: true,
-                interlaced: true
-            }
-        }
-    },
-    cssmin: {
-        release: {
-            files: { 'bin/public/css/all.css': 'bin/public/css/all.css' },
-            options: {
-                keepSpecialComments: 0
-            }
-        }
-    },
-    uglify: {
-        js: {
-            files: { 'bin/public/js/all.js': 'bin/public/js/**/*.js' },
-            options: {
-                preserveComments: false
-            }
-        }
     }
 };
