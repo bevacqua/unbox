@@ -51,6 +51,7 @@
     "grunt-rev": "0.1.0",
     "grunt-shell": "0.3.1",
     "grunt-spritesmith": "1.7.0",
+    "grunt-usemin": "2.0.0",
     "karma": "0.10.2",
     "karma-mocha": "0.1.0",
     "karma-phantomjs-launcher": "0.1.0",

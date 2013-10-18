@@ -7,6 +7,13 @@ module.exports = {
         css: { files: { src: 'bin/public/css/all.css' } },
         js: { files: { src: 'bin/public/js/**/*.js' } }
     },
+    usemin: {
+        html: 'bin/{public,views}/**/*.html',
+        css: 'bin/public/**/*.css',
+        options: {
+            dirs: ['bin']
+        }
+    },
     bump: {
         options: {
             files: ['package.json', 'bower.json'],

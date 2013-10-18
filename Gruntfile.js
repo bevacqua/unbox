@@ -38,7 +38,7 @@ module.exports = function(grunt){
 
     alias('build:debug', 'clean copy:other images:debug css:debug js:debug views:debug bump-only:build');
     alias('build:rebuild', 'build:debug play:success');
-    alias('build:release', 'clean copy:other images:release css:release js:release views:release bump-only:build');
+    alias('build:release', 'clean copy:other images:release css:release js:release views:release usemin bump-only:build');
 
     // testing tasks
     alias('test', 'jshint csslint mochaTest:unit karma:unit_once');
