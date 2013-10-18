@@ -5,7 +5,8 @@ var emoji = require('emoji-random');
 module.exports = {
     rev: {
         css: { files: { src: 'bin/public/css/all.css' } },
-        js: { files: { src: 'bin/public/js/**/*.js' } }
+        js: { files: { src: 'bin/public/js/**/*.js' } },
+        images: { files: { src: 'bin/public/**/*.{jpg,png,gif}' } }
     },
     usemin: {
         html: 'bin/{public,views}/**/*.html',
