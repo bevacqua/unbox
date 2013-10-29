@@ -4,6 +4,9 @@ var assets = require('../assets');
 
 module.exports = {
     jshint: {
+        options: {
+            reporter: require('jshint-stylish')
+        },
         client: assets.js.lint('src/client/js', ['src/client/js/**/*.js', '!src/client/js/vendor/**/*.js']),
         client_tests: assets.js.lint('test', ['test/client']),
         server: assets.js.lint('src/srv', ['src/srv', 'src/lib', 'app.js']),
