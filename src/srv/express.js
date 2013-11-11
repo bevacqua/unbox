@@ -9,9 +9,6 @@ var errorHandler = require('./expressErrorHandler.js');
 var port = conf('PORT');
 var debug = conf('BUILD_DISTRIBUTION') === 'debug';
 
-var statics = path.join(conf.cwd, 'bin/public');
-var favicon = path.join(statics, 'favicon.ico');
-
 logger.info('executing:', process.argv.join(' '));
 logger.info('environment: %s, distribution: %s, build: %s',
     conf('NODE_ENV'), conf('BUILD_DISTRIBUTION'), conf('BUILD_VERSION')
@@ -35,8 +32,8 @@ controllers.load(app, function(){
     errorHandler.setup(app);
 
     if (debug) {
-        app.use(express.favicon(favicon));
-        app.use(express.static(statics));
+        app.use(express.static('bin/public'));
+        app.use(express.favicon('bin/public/favicon.ico'));
     } else {
         logger.info('assuming nginx serves static assets');
     }
