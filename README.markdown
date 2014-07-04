@@ -36,7 +36,7 @@ In order to enable `livereload`, you'll need to install the [browser extension](
 
 # Deployment
 
-See the [README](https://github.com/bevacqua/io/tree/master/deploy/README.markdown) about deploys.
+See the [README](https://github.com/bevacqua/unbox/tree/master/deploy/README.markdown) about deploys.
 
 # Unboxed Projects
 
