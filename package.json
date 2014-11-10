@@ -15,7 +15,13 @@
   },
   "dependencies": {
     "express": "3.4.0",
+    "grunt": "^0.4.5",
+    "grunt-karma": "^0.9.0",
+    "karma": "^0.12.24",
+    "karma-mocha": "^0.1.9",
+    "karma-phantomjs-launcher": "^0.1.4",
     "lodash": "2.2.0",
+    "mocha": "^2.0.1",
     "moment": "2.2.1",
     "nconf": "0.6.7",
     "nodetime": "0.8.13",

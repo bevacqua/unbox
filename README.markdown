@@ -1,4 +1,4 @@
-# unbox [![Build Status](https://travis-ci.org/bevacqua/unbox.png?branch=master)](https://travis-ci.org/bevacqua/unbox) [![Dependency Status](https://gemnasium.com/bevacqua/unbox.png)](https://gemnasium.com/bevacqua/unbox)
+# unbox [![Build Status](https://travis-ci.org/bevacqua/unbox.png?branch=master)](https://travis-ci.org/bevacqua/unbox)
 
 #### Unbox a node application with a well-designed build-oriented approach in minutes
 
